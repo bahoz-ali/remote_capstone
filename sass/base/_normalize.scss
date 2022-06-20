@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 // =============================================================================
 // Normalize.scss based on Nicolas Gallagher and Jonathan Neal's
 // normalize.css v2.1.3 | MIT License | git.io/normalize
@@ -254,10 +256,6 @@ pre {
 
 // Set consistent quote types.
 
-q {
-  quotes: '\201C''\201D''\2018''\2019';
-}
-
 // 1. Addresses CSS quotes not supported in IE6/7
 // 2. Addresses quote property not supported in S4
 
@@ -265,6 +263,7 @@ q {
 @if $legacy_support_for_ie {
   q {
     quotes: none;
+    quotes: '\201C''\201D''\2018''\2019';
   }
 }
 
@@ -432,6 +431,8 @@ textarea {
 button,
 input {
   line-height: normal;
+  border: 0;
+  padding: 0;
 }
 
 // Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -474,34 +475,12 @@ input[disabled] {
 // Removes inner padding and border in FF3+
 // www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
 
-button,
 input {
   &::-moz-focus-inner {
     border: 0;
     padding: 0;
   }
-}
 
-// 1. Removes default vertical scrollbar in IE6/7/8/9
-// 2. Improves readability and alignment in all browsers
-
-textarea {
-  overflow: auto; // 1
-  vertical-align: top; // 2
-}
-
-// =============================================================================
-// Tables
-// =============================================================================
-
-// Remove most spacing between table cells
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input {
   // 1. Addresses appearance set to searchfield in S5, Chrome
   // 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
   &[type='search'] {
@@ -516,6 +495,25 @@ input {
     &::-webkit-search-decoration {
       -webkit-appearance: none;
     }
+  }
+
+  // 1. Removes default vertical scrollbar in IE6/7/8/9
+  // 2. Improves readability and alignment in all browsers
+
+  textarea {
+    overflow: auto; // 1
+    vertical-align: top; // 2
+  }
+
+  // =============================================================================
+  // Tables
+  // =============================================================================
+
+  // Remove most spacing between table cells
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
   }
 
   // 1. Address box sizing set to `content-box` in IE 8/9/10.
