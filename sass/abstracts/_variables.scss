@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
-/**
- * Variables
- */
-
 /*
  * Fonts
  * ========================================================================== */
@@ -37,14 +33,12 @@ $line-height: 24px;
  * Basic Colors
  * ========================================================================== */
 
-$blue: #00f;
-$red: #f00;
 $white: #fff;
 $black: #000;
 $gray: #ccc;
+$dark100: #3e3e3e;
 
-/*
- * Mixing Colors
- * ========================================================================== */
-$text-color: $black;
-$inverted-text-color: $white;
+$paragraphColor: #a3a3a3;
+$headingColor: #1c1c1c;
+$primaryColor: #f9ed69;
+$secondColor: #6a2c70;

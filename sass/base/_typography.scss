@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  color: $text-color;
+  color: $paragraphColor;
   font-size: $paragraph;
   line-height: $line-height;
   -moz-osx-font-smoothing: grayscale;
@@ -35,26 +35,12 @@ button,
 input,
 select,
 textarea {
-  color: $text-color;
+  color: $paragraphColor;
 }
 
 a {
-  color: $text-color;
+  color: $paragraphColor;
   text-decoration: none;
-
-  &:visited {
-    color: $text-color;
-    text-decoration: none;
-    outline: 0;
-  }
-
-  &:focus,
-  &:active,
-  &:hover {
-    color: $text-color;
-    text-decoration: underline;
-    outline: 0;
-  }
 }
 
 i,

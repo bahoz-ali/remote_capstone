@@ -1,1 +1,123 @@
-// do page stuff
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.top_menu {
+  display: none;
+  background-color: $dark100;
+  padding: 0.4rem;
+}
+
+.top_menu_list {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-right: 3rem;
+  gap: 0.8rem;
+  cursor: pointer;
+
+  .item {
+    color: $gray;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+.main_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background-color: $white;
+
+  .bi-list {
+    font-size: 40px;
+  }
+  .logo {
+    max-width: 45px;
+    max-height: 45px;
+  }
+}
+
+.main_menu_list {
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: $white;
+  opacity: 0.95;
+  display: none;
+  gap: 2rem;
+  flex-direction: column;
+
+  .bi-x-lg {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
+  .cc {
+    padding: 0.5rem 0.8rem;
+    border: 2px solid #ef452f;
+    color: #ef452f;
+  }
+
+  .item {
+    a {
+      border-radius: 2px;
+      padding: 0.2rem 0.6rem;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover a {
+      background-color: $secondColor;
+      color: $primaryColor;
+    }
+  }
+}
+
+.main_menu_list.open--menu {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .main_menu {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+    .bi-list {
+      display: none;
+    }
+  }
+
+  .main_menu_list {
+    padding: 0.5rem 0.5rem;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 0.8rem;
+    flex-grow: 1;
+
+    .bi-x-lg {
+      display: none;
+    }
+
+    .cc {
+      margin-left: 2rem;
+    }
+  }
+}
