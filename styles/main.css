@@ -974,9 +974,10 @@ input:focus {
   right: 1rem;
 }
 .main_menu_list .cc {
+  font-family: monospace;
   padding: 0.5rem 0.8rem;
-  border: 2px solid #ef452f;
-  color: #ef452f;
+  border: 2px solid #6a2c70;
+  color: #6a2c70;
 }
 .main_menu_list .item a {
   border-radius: 2px;
@@ -1044,7 +1045,7 @@ input:focus {
 .main .main__middle {
   width: auto;
   color: #a3a3a3;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   padding: 0.4rem 0.8rem;
   background-color: #f7f7f7;
 }
@@ -1055,6 +1056,78 @@ input:focus {
   color: #a3a3a3;
 }
 
+.container {
+  padding: 2rem 1.4rem;
+  text-align: center;
+}
+.container .line {
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #f9ed69;
+  margin: 0.5rem auto;
+}
+.container h2 {
+  font-size: 1.2rem;
+}
+
+.program {
+  padding: 2rem 1.4rem;
+  background-color: #6a2c70;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program_list {
+  margin-top: 1rem;
+  background-color: rgba(14, 14, 14, 0.109);
+  padding: 1rem 1.2rem;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+}
+.program_list .fas {
+  font-size: 2rem;
+  color: #f9ed69;
+}
+.program_list .program__title h3 {
+  font-size: 1rem;
+  width: 6em;
+}
+.program_list .program__description {
+  text-align: initial;
+}
+
+@media only screen and (min-width: 768px) {
+  .program {
+    display: block;
+  }
+  .program_container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .program_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+  }
+  .program_list .program__title h3 {
+    width: auto;
+    font-size: 1.2rem;
+    letter-spacing: 1.1;
+  }
+  .program_list .program__description {
+    text-align: center;
+    max-width: 15em;
+  }
+}
 .hi {
   padding: 22px;
 }
