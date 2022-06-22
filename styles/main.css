@@ -285,9 +285,6 @@ input[type=checkbox], input[type=radio] {
 html {
   -webkit-text-size-adjust: 100%;
 }
-html:focus-within {
-  scroll-behavior: smooth;
-}
 
 body {
   text-size-adjust: 100%;
@@ -880,32 +877,20 @@ input:focus {
   display: block;
 }
 
-.hi {
-  width: 22px;
+.btn {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.hi {
-  padding: 22px;
+.m-2 {
+  margin-top: 2rem;
 }
 
-.hi {
-  width: 22px;
-}
-
-.hi {
-  height: 22px;
-}
-
-.hi {
-  width: 22px;
-}
-
-.hi {
-  width: 22px;
-}
-
-.hi {
-  padding: 22px;
+.btn--primary {
+  background-color: #f9ed69;
+  color: #6a2c70;
 }
 
 .clearfix::after {
@@ -914,10 +899,20 @@ input:focus {
   display: table;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
 .top_menu {
   display: none;
   background-color: #3e3e3e;
   padding: 0.4rem;
+}
+.top_menu a {
+  color: #ccc;
 }
 
 .top_menu_list {
@@ -942,6 +937,7 @@ input:focus {
   align-items: center;
   padding: 1rem 1rem;
   background-color: #fff;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .main_menu .bi-list {
   font-size: 40px;
@@ -956,7 +952,7 @@ input:focus {
   padding-left: 1rem;
   position: absolute;
   width: 70%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 10;
@@ -965,6 +961,9 @@ input:focus {
   display: none;
   gap: 2rem;
   flex-direction: column;
+}
+.main_menu_list .btn {
+  padding: 0;
 }
 .main_menu_list .bi-x-lg {
   font-size: 20px;
@@ -995,16 +994,20 @@ input:focus {
 }
 
 @media only screen and (min-width: 768px) {
+  .top_menu {
+    display: block;
+  }
   .main_menu {
     justify-content: space-between;
     padding: 1rem 2rem;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    z-index: 10;
   }
   .main_menu .bi-list {
     display: none;
   }
   .main_menu_list {
     padding: 0.5rem 0.5rem;
+    height: auto;
     justify-content: end;
     align-items: center;
     display: flex;
@@ -1016,7 +1019,7 @@ input:focus {
   .main_menu_list .bi-x-lg {
     display: none;
   }
-  .main_menu_list .cc {
+  .main_menu_list .btn {
     margin-left: 2rem;
   }
 }
@@ -1055,6 +1058,11 @@ input:focus {
   color: #a3a3a3;
 }
 
+@media only screen and (min-width: 768px) {
+  .main {
+    background-image: url("../images/main_big.png");
+  }
+}
 .container {
   padding: 2rem 1.4rem;
   text-align: center;
@@ -1078,6 +1086,19 @@ input:focus {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.program .btn {
+  display: none;
+}
+.program .link {
+  text-decoration: underline;
+  color: #f9ed69;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: bold;
+  display: block;
 }
 
 .program_list {
@@ -1105,6 +1126,16 @@ input:focus {
 @media only screen and (min-width: 768px) {
   .program {
     display: block;
+  }
+  .program .link {
+    display: none;
+  }
+  .program .btn {
+    display: inline-block;
+    text-align: center;
+  }
+  .program .btn a {
+    color: #6a2c70;
   }
   .program_container {
     display: flex;
@@ -1139,7 +1170,7 @@ input:focus {
   position: absolute;
   top: -0.8rem;
   left: -0.8rem;
-  width: 200px;
+  width: 150px;
   height: 200px;
   border-radius: 0.8rem;
   z-index: -1;
@@ -1147,33 +1178,36 @@ input:focus {
 }
 
 .speaker {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   text-align: start;
   position: relative;
 }
 .speaker .speaker__image {
   margin-right: 1rem;
-  max-width: 200px;
+  width: 150px;
+  height: 200px;
+  min-height: 200px;
   max-height: 200px;
-  object-fit: cover;
-  object-position: center;
   float: left;
 }
 .speaker .speaker__image img {
-  border-radius: 0.8rem;
+  min-height: 100%;
+  min-width: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 .speaker .speaker__name {
-  margin-top: 0.5rem;
   font-size: 1.1rem;
 }
 .speaker .organize {
-  margin-top: 1rem;
+  margin-top: 0.4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #6a2c70;
   font-style: italic;
 }
 .speaker .speaker__description {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
 }
 
 .dots {
@@ -1184,7 +1218,8 @@ input:focus {
   .speaker_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0.8rem;
+    column-gap: 1.5rem;
+    row-gap: 0.5rem;
     padding: 2rem 1rem 1rem 1rem;
   }
 }

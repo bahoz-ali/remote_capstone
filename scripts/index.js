@@ -18,7 +18,7 @@ const speakers = [
   {
     name: 'Prashanth Chandrasekar',
     organize:
-      'Prashanth is CEO of Stack Overflow, the world\'s largest and most-trusted software.',
+      "Prashanth is CEO of Stack Overflow, the world's largest and most-trusted software.",
     description:
       'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing.',
     image: '../images/speaker/speaker1.PNG',
@@ -45,6 +45,22 @@ const speakers = [
     description:
       'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing.',
     image: '../images/speaker/speaker4.PNG',
+  },
+  {
+    name: 'Bret Taylor',
+    organize:
+      "As president and COO of Salesforce, Bret leads the software company's global product vision.",
+    description:
+      'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing.',
+    image: '../images/speaker/speaker5.PNG',
+  },
+  {
+    name: 'Matt Biilmann',
+    organize:
+      "As president and COO of Salesforce, Bret leads the software company's global product vision.",
+    description:
+      'Matt is CEO and co-founder of Netlify, a platform designed to build, deploy and scale modern web applications.',
+    image: '../images/speaker/speaker6.PNG',
   },
 ];
 

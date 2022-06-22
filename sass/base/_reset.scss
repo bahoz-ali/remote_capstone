@@ -17,7 +17,6 @@
   animation-duration: 0s !important;
   animation-delay: 0s !important;
   animation-iteration-count: 1 !important;
-  scroll-behavior: auto !important;
 }
 
 /**
@@ -112,10 +111,6 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-
-  &:focus-within {
-    scroll-behavior: smooth;
-  }
 }
 
 body {
