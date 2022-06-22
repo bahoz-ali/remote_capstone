@@ -29,14 +29,15 @@
 .main_menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem;
   background-color: $white;
 
   .bi-list {
     font-size: 40px;
   }
+
   .logo {
     max-width: 45px;
     max-height: 45px;
@@ -119,5 +120,49 @@
     .cc {
       margin-left: 2rem;
     }
+  }
+}
+
+// -------------- Main Section
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem; 
+  align-items: center; 
+  gap: 2rem;
+  background-image: url('../images/main_mobile.png');
+  background-size: cover;
+
+  .main__header {
+    color: $headingColor;
+    h3 {
+      font-size: 0.8rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      padding: 0.5rem 0.8rem;
+      color: $primaryColor;
+      background-color: $secondColor;
+    }
+  }
+
+  .main__middle {
+    width: auto;
+    color: $paragraphColor;
+    border: 1px solid $white;
+    padding: 0.4rem 0.8rem;
+    background-color: #f7f7f7;
+
+    p {
+      max-width: 20em;
+    }
+  }
+
+  .main__bottom {
+    color: $paragraphColor;
   }
 }
