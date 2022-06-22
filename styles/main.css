@@ -980,6 +980,7 @@ input:focus {
   color: #6a2c70;
 }
 .main_menu_list .item a {
+  font-weight: bold;
   border-radius: 2px;
   padding: 0.2rem 0.6rem;
   transition: all 0.4s ease-in-out;
@@ -1030,11 +1031,9 @@ input:focus {
   background-image: url("../images/main_mobile.png");
   background-size: cover;
 }
-.main .main__header {
-  color: #1c1c1c;
-}
 .main .main__header h3 {
-  font-size: 0.8rem;
+  color: #6a2c70;
+  font-size: 1rem;
 }
 .main .main__header h1 {
   font-size: 2rem;
@@ -1068,6 +1067,7 @@ input:focus {
 }
 .container h2 {
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .program {
@@ -1126,6 +1126,66 @@ input:focus {
   .program_list .program__description {
     text-align: center;
     max-width: 15em;
+  }
+}
+.speaker_list {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.speaker__image::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 0.8rem;
+  z-index: -1;
+  background-color: #f9ed69;
+}
+
+.speaker {
+  margin-bottom: 1.5rem;
+  text-align: start;
+  position: relative;
+}
+.speaker .speaker__image {
+  margin-right: 1rem;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+  float: left;
+}
+.speaker .speaker__image img {
+  border-radius: 0.8rem;
+}
+.speaker .speaker__name {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+.speaker .organize {
+  margin-top: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #6a2c70;
+  font-style: italic;
+}
+.speaker .speaker__description {
+  margin-top: 1rem;
+}
+
+.dots {
+  color: #6a2c70;
+}
+
+@media only screen and (min-width: 768px) {
+  .speaker_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.8rem;
+    padding: 2rem 1rem 1rem 1rem;
   }
 }
 .hi {

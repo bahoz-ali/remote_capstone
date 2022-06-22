@@ -76,6 +76,7 @@
 
   .item {
     a {
+      font-weight: bold;
       border-radius: 2px;
       padding: 0.2rem 0.6rem;
       transition: all 0.4s ease-in-out;
@@ -138,9 +139,9 @@
   background-size: cover;
 
   .main__header {
-    color: $headingColor;
     h3 {
-      font-size: 0.8rem;
+      color: $secondColor;
+      font-size: 1rem;
     }
 
     h1 {
@@ -179,8 +180,10 @@
     background-color: $primaryColor;
     margin: 0.5rem auto;
   }
+
   h2 {
     font-size: 1.2rem;
+    text-align: center;
   }
 }
 
@@ -192,7 +195,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .program_list {
@@ -229,7 +231,6 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    
   }
 
   .program_list {
@@ -252,4 +253,70 @@
   }
 }
 
+// -------------- program Section
 
+.speaker_list {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.speaker__image::before {
+  content: '';
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 0.8rem;
+  z-index: -1;
+  background-color: $primaryColor;
+}
+
+.speaker {
+  margin-bottom: 1.5rem;
+  text-align: start;
+  position: relative;
+
+  .speaker__image {
+    margin-right: 1rem;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+
+    img {
+      border-radius: 0.8rem;
+    }
+  }
+
+  .speaker__name {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .organize {
+    margin-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $secondColor;
+    font-style: italic;
+  }
+
+  .speaker__description {
+    margin-top: 1rem;
+  }
+}
+
+.dots {
+  color: $secondColor;
+}
+
+@media only screen and (min-width: 768px) {
+  .speaker_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.8rem;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+}
