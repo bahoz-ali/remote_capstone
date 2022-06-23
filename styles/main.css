@@ -826,7 +826,7 @@ html {
 }
 
 body {
-  color: #a3a3a3;
+  color: #837575;
   font-size: 16px;
   line-height: 24px;
   -moz-osx-font-smoothing: grayscale;
@@ -838,7 +838,7 @@ h1,
 h2,
 h3 {
   font-family: lato, arial, helvetica, sans-serif;
-  color: #272a2f;
+  color: #272a31;
   font-weight: bold;
 }
 
@@ -847,11 +847,11 @@ button,
 input,
 select,
 textarea {
-  color: #a3a3a3;
+  color: #837575;
 }
 
 a {
-  color: #272a2f;
+  color: #272a31;
   text-decoration: none;
 }
 
@@ -890,8 +890,8 @@ input:focus {
 }
 
 .btn--primary {
-  background-color: #f9ed69;
-  color: #6a2c70;
+  background-color: #ec5242;
+  color: #fff;
 }
 
 /* stylelint-disable no-descending-specificity */
@@ -929,7 +929,7 @@ header {
   color: #ccc;
 }
 .top_menu_list .item:hover {
-  color: #f9ed69;
+  color: #ec5242;
 }
 
 .main_menu {
@@ -977,8 +977,8 @@ header {
 .main_menu_list .cc {
   font-family: monospace;
   padding: 0.5rem 0.8rem;
-  border: 2px solid #6a2c70;
-  color: #6a2c70;
+  border: 2px solid #ec5242;
+  color: #ec5242;
 }
 .main_menu_list .item a {
   font-weight: bold;
@@ -987,8 +987,8 @@ header {
   transition: all 0.4s ease-in-out;
 }
 .main_menu_list .item:hover a {
-  background-color: #6a2c70;
-  color: #f9ed69;
+  background-color: #d3d3d3;
+  color: #ec5242;
 }
 
 .main_menu_list.open--menu {
@@ -1037,18 +1037,17 @@ header {
   background-size: cover;
 }
 .main .main__header h3 {
-  color: #6a2c70;
+  color: #ec5242;
   font-size: 1rem;
 }
 .main .main__header h1 {
   font-size: 2rem;
   padding: 0.5rem 0.8rem;
-  color: #f9ed69;
-  background-color: #6a2c70;
+  color: #ec5242;
 }
 .main .main__middle {
   width: auto;
-  color: #a3a3a3;
+  color: #837575;
   border: 3px solid #fff;
   padding: 0.4rem 0.8rem;
   background-color: #f7f7f7;
@@ -1057,7 +1056,7 @@ header {
   max-width: 20em;
 }
 .main .main__bottom {
-  color: #a3a3a3;
+  color: #837575;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1072,7 +1071,7 @@ header {
 .container .line {
   width: 5rem;
   height: 0.3rem;
-  background-color: #f9ed69;
+  background-color: #ec5242;
   margin: 0.5rem auto;
 }
 .container h2 {
@@ -1081,19 +1080,22 @@ header {
 }
 
 .program {
-  background-color: #6a2c70;
+  background-color: #272a31;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+.program h2 {
+  color: #fff;
+}
 .program .btn {
   display: none;
 }
 .program .link {
   text-decoration: underline;
-  color: #f9ed69;
+  color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -1112,14 +1114,17 @@ header {
   align-items: center;
   gap: 0.7rem;
 }
+.program_list p {
+  color: #fff;
+}
 .program_list .fas {
   font-size: 2rem;
-  color: #f9ed69;
+  color: #fff;
 }
 .program_list .program__title h3 {
   font-size: 1rem;
   width: 6em;
-  color: rgb(253, 136, 93);
+  color: #ec5242;
 }
 .program_list .program__description {
   text-align: initial;
@@ -1137,7 +1142,7 @@ header {
     text-align: center;
   }
   .program .btn a {
-    color: #6a2c70;
+    color: #fff;
   }
   .program_container {
     display: flex;
@@ -1175,7 +1180,7 @@ header {
   height: 200px;
   border-radius: 0.8rem;
   z-index: -1;
-  background-color: #f9ed69;
+  background-color: #ec5242;
 }
 
 .speaker {
@@ -1204,7 +1209,7 @@ header {
 .speaker .organize {
   margin-top: 0.4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #6a2c70;
+  color: #ec5242;
   font-style: italic;
 }
 .speaker .speaker__description {
@@ -1212,7 +1217,7 @@ header {
 }
 
 .dots {
-  color: #6a2c70;
+  color: #837575;
 }
 
 @media only screen and (min-width: 768px) {

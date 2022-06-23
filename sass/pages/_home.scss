@@ -91,8 +91,8 @@ header {
   .cc {
     font-family: monospace;
     padding: 0.5rem 0.8rem;
-    border: 2px solid $secondColor;
-    color: $secondColor;
+    border: 2px solid $primaryColor;
+    color: $primaryColor;
   }
 
   .item {
@@ -165,7 +165,7 @@ header {
 
   .main__header {
     h3 {
-      color: $secondColor;
+      color: $primaryColor;
       font-size: 1rem;
     }
 
@@ -173,7 +173,6 @@ header {
       font-size: 2rem;
       padding: 0.5rem 0.8rem;
       color: $primaryColor;
-      background-color: $secondColor;
     }
   }
 
@@ -218,12 +217,16 @@ header {
 }
 
 .program {
-  background-color: $secondColor;
+  background-color: $bgColorDark;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  h2 {
+    color: #fff;
+  }
 
   .btn {
     display: none;
@@ -231,7 +234,7 @@ header {
 
   .link {
     text-decoration: underline;
-    color: $primaryColor;
+    color: $white;
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -251,15 +254,19 @@ header {
   align-items: center;
   gap: 0.7rem;
 
+  p {
+    color: $white;
+  }
+
   .fas {
     font-size: 2rem;
-    color: $primaryColor;
+    color: $white;
   }
 
   .program__title h3 {
     font-size: 1rem;
     width: 6em;
-    color: rgb(253, 136, 93);
+    color: $primaryColor;
   }
 
   .program__description {
@@ -280,7 +287,7 @@ header {
       text-align: center;
 
       a {
-        color: $secondColor;
+        color: $white;
       }
     }
   }
@@ -359,7 +366,7 @@ header {
   .organize {
     margin-top: 0.4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $secondColor;
+    color: $primaryColor;
     font-style: italic;
   }
 
@@ -369,7 +376,7 @@ header {
 }
 
 .dots {
-  color: $secondColor;
+  color: $paragraphColor;
 }
 
 @media only screen and (min-width: 768px) {
