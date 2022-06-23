@@ -838,7 +838,7 @@ h1,
 h2,
 h3 {
   font-family: lato, arial, helvetica, sans-serif;
-  color: #272A2F;
+  color: #272a2f;
   font-weight: bold;
 }
 
@@ -851,7 +851,7 @@ textarea {
 }
 
 a {
-  color: #272A2F;
+  color: #272a2f;
   text-decoration: none;
 }
 
@@ -1276,6 +1276,7 @@ header {
     display: none;
   }
 }
+/* stylelint-disable no-descending-specificity */
 .about_page .main .main__header h1 {
   line-height: 1.5;
 }

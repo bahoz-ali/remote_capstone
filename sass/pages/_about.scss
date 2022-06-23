@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 .about_page .main {
   .main__header h1 {
     line-height: 1.5;
@@ -47,6 +49,7 @@
 }
 
 // ----------- Past Summit section
+
 .past_summit_section {
   > p {
     text-align: center;
@@ -96,7 +99,6 @@
 
 @media only screen and (min-width: 768px) {
   .past_summit_section {
-
     .summits {
       display: flex;
       flex-direction: row;

@@ -64,7 +64,9 @@ const speakers = [
   },
 ];
 
-function speakerTemplate({ name, image, description, organize }) {
+function speakerTemplate({
+  name, image, description, organize,
+}) {
   const div = document.createElement('div');
   div.classList.add('speaker', 'clearfix');
 
@@ -93,12 +95,13 @@ function speakerTemplate({ name, image, description, organize }) {
 }
 
 function displaySpeaker() {
-  const home_page = document.getElementById('home_page');
+  const homePage = document.getElementById('home_page');
 
-  if (home_page)
+  if (homePage) {
     speakers.forEach((speaker) => {
       speakerList.append(speakerTemplate(speaker));
     });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

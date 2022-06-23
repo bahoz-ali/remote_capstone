@@ -47,7 +47,8 @@ header {
   align-items: center;
   padding: 1rem 1rem;
   background-color: $white;
-  box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px,
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0 0 0 1px;
 
   .bi-list {
@@ -156,7 +157,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 5rem 2rem 2rem 2rem;
   align-items: center;
   gap: 2rem;
@@ -403,7 +403,6 @@ header {
 
   img {
     max-width: 150px;
-
     height: auto;
     object-fit: contain;
     object-position: center;
