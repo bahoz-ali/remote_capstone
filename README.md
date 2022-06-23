@@ -28,8 +28,7 @@ To get a local copy up and running follow these simple example steps.
 - Then click on Go live,if you have live serer extension to see the project on browser 
 
 ### Prerequisites
-
-### Setup
+- you should have a browser like google.
 
 ### Install
 - just use this command in terminal to download all necessary packages:-
