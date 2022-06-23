@@ -4,6 +4,9 @@
 
 > This is remote conference project, Remote work, also called work from home, work from anywhere, telework, remote job, mobile work, and distance work is an employment arrangement in which employees do not commute to a central place of work, such as an office building, warehouse, or retail store.
 
+> **Note, please click the link to watch the video:-**
+ [video explination](https://www.loom.com/share/ad6aac0159374550bc1dea79f91743c2)
+
 ## Built With
 
 - HTML
