@@ -93,9 +93,12 @@ function speakerTemplate({ name, image, description, organize }) {
 }
 
 function displaySpeaker() {
-  speakers.forEach((speaker) => {
-    speakerList.append(speakerTemplate(speaker));
-  });
+  const home_page = document.getElementById('home_page');
+
+  if (home_page)
+    speakers.forEach((speaker) => {
+      speakerList.append(speakerTemplate(speaker));
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
