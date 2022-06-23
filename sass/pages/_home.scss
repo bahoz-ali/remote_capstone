@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 .clearfix::after {
   content: '';
   clear: both;
@@ -31,6 +33,7 @@ header {
 
   .item {
     color: $gray;
+
     &:hover {
       color: $primaryColor;
     }
@@ -44,8 +47,9 @@ header {
   align-items: center;
   padding: 1rem 1rem;
   background-color: $white;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0 0 0 1px;
+
   .bi-list {
     font-size: 40px;
   }
@@ -188,6 +192,7 @@ header {
     color: $paragraphColor;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .main {
     background-image: url('../images/main_big.png');
@@ -195,7 +200,7 @@ header {
 }
 // -------------- program Section
 .container {
-  padding: 2rem 1.4rem;
+  padding: 3rem 1.4rem;
   text-align: center;
 
   .line {
@@ -212,7 +217,6 @@ header {
 }
 
 .program {
-  padding: 2rem 1.4rem;
   background-color: $secondColor;
   text-align: center;
   display: flex;
@@ -295,7 +299,6 @@ header {
     .program__title h3 {
       width: auto;
       font-size: 1.2rem;
-      letter-spacing: 1.1;
     }
 
     .program__description {
@@ -326,7 +329,7 @@ header {
 }
 
 .speaker {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: start;
   position: relative;
 
@@ -373,6 +376,70 @@ header {
     grid-template-columns: 1fr 1fr;
     column-gap: 1.5rem;
     row-gap: 0.5rem;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+}
+
+// -------------- partner Section
+
+.partner_section {
+  background-color: $dark100;
+  padding: 3rem 1rem;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 150px;
+
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(10%);
+  }
+}
+
+// -------------- partner Section
+
+.footer_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.7rem;
+
+  img {
+    width: 150px;
+    max-height: 150px;
+  }
+
+  .content {
+    text-align: left;
+
+    :nth-child(2) {
+      margin-top: 0.7rem;
+      max-width: 34em;
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer_section {
+    .content {
+      :nth-child(2) {
+        max-width: 34em;
+        display: inline-block;
+      }
+
+      br {
+        display: none;
+      }
+    }
   }
 }
