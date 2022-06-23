@@ -1174,10 +1174,10 @@ header {
 .speaker__image::before {
   content: "";
   position: absolute;
-  top: -0.8rem;
-  left: -0.8rem;
-  width: 150px;
-  height: 200px;
+  top: -0.4rem;
+  left: -0.4rem;
+  width: 110px;
+  height: 100px;
   border-radius: 0.8rem;
   z-index: -1;
   background-color: #ec5242;
@@ -1187,33 +1187,39 @@ header {
   margin-bottom: 2rem;
   text-align: start;
   position: relative;
+  display: flex;
+  line-height: 1;
 }
 .speaker .speaker__image {
   margin-right: 1rem;
-  width: 150px;
-  height: 200px;
-  min-height: 200px;
-  max-height: 200px;
-  float: left;
+  width: 110px;
+  height: 100px;
+  flex-basis: 110px;
+  flex-shrink: 0;
 }
 .speaker .speaker__image img {
-  min-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   object-position: center;
   object-fit: cover;
   border-radius: 0.5rem;
 }
 .speaker .speaker__name {
-  font-size: 1.1rem;
+  margin: 0;
+  font-size: 1rem;
 }
 .speaker .organize {
   margin-top: 0.4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #ec5242;
   font-style: italic;
+  font-size: 0.8rem;
 }
 .speaker .speaker__description {
   margin-top: 0.3rem;
+}
+.speaker .speaker__description p {
+  font-size: 0.8rem;
 }
 
 .dots {
@@ -1260,8 +1266,8 @@ header {
   gap: 0.7rem;
 }
 .footer_section img {
-  width: 150px;
-  max-height: 150px;
+  width: 70px;
+  max-height: 70px;
 }
 .footer_section .content {
   text-align: left;
@@ -1273,6 +1279,10 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  .footer_section img {
+    width: 110px;
+    max-height: 110px;
+  }
   .footer_section .content :nth-child(2) {
     max-width: 34em;
     display: inline-block;
@@ -1372,6 +1382,12 @@ header {
   .past_summit_section .summits .summit {
     max-width: 600px;
   }
+}
+.about_page .footer_section {
+  background-color: #2d2d2d;
+}
+.about_page .footer_section p {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
