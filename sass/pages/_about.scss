@@ -1,0 +1,123 @@
+/* stylelint-disable no-descending-specificity */
+
+.about_page .main {
+  .main__header h1 {
+    line-height: 1.5;
+  }
+
+  .main__middle p {
+    max-width: 45em;
+    text-align: center;
+  }
+
+  .main__bottom {
+    text-align: center;
+
+    :not(:first-child) {
+      font-weight: bold;
+      color: rgb(32, 25, 25);
+    }
+  }
+}
+
+// ---------- Summit Logo section
+.summit_section {
+  display: block;
+  text-align: center;
+
+  p {
+    text-align: center;
+    max-width: 23em;
+    margin: auto auto;
+  }
+}
+
+.summit__logo {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+}
+
+// ----------- Past Summit section
+
+.past_summit_section {
+  > p {
+    text-align: center;
+    max-width: 23em;
+    margin: 0 auto;
+  }
+
+  .summits {
+    margin-top: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+
+    .summit {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('../images/bg1.jfif');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 250px;
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: inset 0 0 0 1000px #ff5106a7;
+      padding: 0.3rem 0.6rem;
+
+      h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+
+      p {
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .past_summit_section {
+    .summits {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content: center;
+
+      .summit {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+// ---------- footer section
+
+.about_page .footer_section {
+  background-color: #2d2d2d;
+
+  p {
+    color: $white;
+  }
+}

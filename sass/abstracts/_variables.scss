@@ -1,0 +1,46 @@
+/* stylelint-disable no-descending-specificity */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+/*
+ * Fonts
+ * ========================================================================== */
+
+$font-family: lato, arial, helvetica, sans-serif;
+$font-family-title: lato, arial, helvetica, sans-serif;
+
+$body-font: $font-family;
+$body-font-weight: 400;
+
+$header-font: $font-family-title;
+
+$basic-font-size: 100%;
+$paragraph: 16px;
+
+// Golden ration for 16px font-size
+$line-height: 24px;
+
+// For REM / EM
+//$basic-font-size: 62.5%;
+//$paragraph: 1.6rem;
+//$line-height: 2.4rem;
+
+/*
+ * Palette
+ * ========================================================================== */
+
+/*
+ * Basic Colors
+ * ========================================================================== */
+
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+$dark100: #3e3e3e;
+$bgColorDark: #272a31;
+$paragraphColor: #837575;
+$headingColor: #272a31;
+
+$primaryColor: #ec5242;
+$secondColor: #d3d3d3;
+// $primaryColor: #f9ed69;

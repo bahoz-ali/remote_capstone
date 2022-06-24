@@ -1,0 +1,70 @@
+/* stylelint-disable no-descending-specificity */
+
+/**
+ * Typography
+ */
+
+html,
+body {
+  font-family: $body-font;
+  font-weight: $body-font-weight;
+}
+
+html {
+  font-size: $basic-font-size;
+}
+
+body {
+  color: $paragraphColor;
+  font-size: $paragraph;
+  line-height: $line-height;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header-font;
+  color: $headingColor;
+  font-weight: bold;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $paragraphColor;
+}
+
+a {
+  color: $headingColor;
+  text-decoration: none;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.br {
+  display: block;
+}

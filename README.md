@@ -1,56 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Remote Work
 
-> Description the project.
+> This is remote conference project, Remote work, also called work from home, work from anywhere, telework, remote job, mobile work, and distance work is an employment arrangement in which employees do not commute to a central place of work, such as an office building, warehouse, or retail store.
 
+> **Note, please click the link to watch the video:-**
+ [video explination](https://www.loom.com/share/ad6aac0159374550bc1dea79f91743c2)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Javascript
+- Git and Github
+- Vscode and linter style
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://bahoz-ali.github.io/remote_capstone/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- `git clone git@github.com:bahoz-ali/remote_capstone.git`
+- open the project folder into visual studio code.
+- Then click on Go live,if you have live serer extension to see the project on browser 
 
-### Setup
+### Prerequisites
+- you should have a browser like google.
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- just use this command in terminal to download all necessary packages:-
+- `npm install`
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/bahoz-ali)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/bahoz-ali)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Author of the design**
+- Thanks to Cindy Shin who is owner this design.
+- Behance: [@behance](https://www.behance.net/adagio07)
 
 ## 🤝 Contributing
 

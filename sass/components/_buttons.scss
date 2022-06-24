@@ -1,0 +1,15 @@
+.btn {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.m-2 {
+  margin-top: 2rem;
+}
+
+.btn--primary {
+  background-color: $primaryColor;
+  color: $white;
+}
