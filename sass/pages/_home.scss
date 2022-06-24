@@ -170,7 +170,8 @@ header {
     }
 
     h1 {
-      font-size: 2rem;
+      margin-top: 0.8rem;
+      font-size: 2.4rem;
       padding: 0.5rem 0.8rem;
       color: $primaryColor;
     }
@@ -196,6 +197,17 @@ header {
 @media only screen and (min-width: 768px) {
   .main {
     background-image: url('../images/main_big.png');
+
+    .main__header {
+      h1 {
+        font-size: 4rem;
+      }
+
+      h3,
+      h2 {
+        font-size: 2rem;
+      }
+    }
   }
 }
 // -------------- program Section
@@ -258,7 +270,7 @@ header {
     color: $white;
   }
 
-  .fas {
+  i {
     font-size: 2rem;
     color: $white;
   }

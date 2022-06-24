@@ -1041,7 +1041,8 @@ header {
   font-size: 1rem;
 }
 .main .main__header h1 {
-  font-size: 2rem;
+  margin-top: 0.8rem;
+  font-size: 2.4rem;
   padding: 0.5rem 0.8rem;
   color: #ec5242;
 }
@@ -1062,6 +1063,13 @@ header {
 @media only screen and (min-width: 768px) {
   .main {
     background-image: url("../images/main_big.png");
+  }
+  .main .main__header h1 {
+    font-size: 4rem;
+  }
+  .main .main__header h3,
+.main .main__header h2 {
+    font-size: 2rem;
   }
 }
 .container {
@@ -1117,7 +1125,7 @@ header {
 .program_list p {
   color: #fff;
 }
-.program_list .fas {
+.program_list i {
   font-size: 2rem;
   color: #fff;
 }
